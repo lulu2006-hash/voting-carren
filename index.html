@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Voting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">🗳️ Web Voting</div>
+  <ul class="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#voting">Voting</a></li>
+    <li><button class="admin-btn" onclick="adminLogin()">Admin</button></li>
+  </ul>
+</header>
+
+<!-- ===== HOME ===== -->
+<section id="home" class="section">
+  <h1>Selamat Datang</h1>
+  <p>Gunakan web ini untuk memilih kandidat favoritmu</p>
+</section>
+
+<!-- ===== VOTING ===== -->
+<section id="voting" class="section">
+  <h1>Pilih Kandidat</h1>
+
+  <div class="card">
+    <img src="c.jpeg">
+    <h3>CARREN</h3>
+    <button onclick="vote(1)">Vote</button>
+  </div>
+
+  <div class="card">
+    <img src="l.jpeg">
+    <h3>SEMMY</h3>
+    <button onclick="vote(2)">Vote</button>
+  </div>
+
+  <div class="card">
+    <img src="c.jpeg">
+    <h3>IVANNA</h3>
+    <button onclick="vote(3)">Vote</button>
+  </div>
+
+  <!-- HASIL ADMIN -->
+  <div class="hasil" id="hasil">
+    <h2>Hasil Voting</h2>
+    <p>CARREN: <span id="a">0</span></p>
+    <p>SEMMY: <span id="b">0</span></p>
+    <p>IVANNA: <span id="c">0</span></p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
